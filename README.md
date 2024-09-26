@@ -1,3 +1,29 @@
+# gut news!
+
+Git Internals and Das Ultimate Keyboard had a baby, and that baby is `gut`! VERY `gut`!
+
+Git Internals does an incredible job of walking you through the 'plumbing' of git -- the low-level commands that do the dirty
+work and allow the 'porcelain' -- the higher level commands -- to shine. These low-level commands make up the guts of git, and are 
+the unsung heroes that make `commit`, `merge`, even `log` possible.
+
+`gut` takes it up a notch. `gut` is a CLI replacement for `git`, that _only_ implements the low-level commands. It makes only the
+guts of git available, forcing you to learn them like you've never learned them before.
+
+Low-level commands are passed along to git (installation of the git CLI is required ... for now).
+Other git commands will politely end with a reference to Git Internals.
+
+Why would you do this? It's fun! In the words of the Git Internals author(s) ... 
+
+"The content-addressable filesystem layer is amazingly cool"
+
+Why would they lie?
+
+More seriously, there's a good chance that `git` is extremely important to you or your team. That problems with git -- a bad merge, a corrupt repo or working copy -- are the most feared and crushing problems you might experience. And that despite that, no one really understands how git really works. At all.
+
+You can fix that :)
+
+### gut started!
+
 ```
 % echo "gut vibes" | /tmp/gut hash-object -w --stdin
 
