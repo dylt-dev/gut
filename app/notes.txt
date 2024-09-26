@@ -1,0 +1,9 @@
+Use cases for hash-object
+
+- no args
+- --stdin
+- file
+- --stdin and a file
+- stdin but use <<< ... either this gets properly handled by the shell or it doesnt
+
+Let's try a naive approach by wiring up a StdinPipe and seeing what happens in the above scenarios
